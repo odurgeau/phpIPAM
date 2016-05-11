@@ -6,9 +6,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "chef/debian-7.6"
+  config.vm.box = "bento/debian-7.8"
 
-  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest: 80, host: 1234
 
   config.vm.provision "shell", path: "install-phpipam.sh"
 
