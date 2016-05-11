@@ -6,7 +6,7 @@ aptitude clean
 aptitude update
 aptitude -y safe-upgrade
 
-apt-get install -y apache2 mysql-server php5 php5-gmp php-pear php5-mysql php5-ldap
+apt-get install -y apache2 mysql-server php5 php5-gmp php-pear php5-mysql php5-ldap php5-curl php5-mcrypt
 rm -f /var/www/index.html
 
 wget https://sourceforge.net/projects/phpipam/files/phpipam-1.2.1.tar/download -O /tmp/phpipam-1.2.1.tar
